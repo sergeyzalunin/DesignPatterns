@@ -1,8 +1,8 @@
 package Tests
 
-import Behavioral.TemplateMethod.SomeChild1
-import Behavioral.TemplateMethod.SomeChild2
-import org.junit.jupiter.api.Test
+import behavioral.templateMethod.SomeChild1
+import behavioral.templateMethod.SomeChild2
+import org.junit.Test
 
 internal class TemplateMethodTest {
 

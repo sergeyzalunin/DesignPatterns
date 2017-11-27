@@ -1,19 +1,22 @@
-import Behavioral.Strategy.IStrategy
-import Behavioral.Strategy.SomeStrategy1
-import Behavioral.Strategy.SomeStrategy2
-import Behavioral.Strategy.StrategyProcessor
-import com.sun.org.apache.bcel.internal.generic.NEW
-import org.junit.jupiter.api.AfterEach
-import org.junit.jupiter.api.Test;
+import behavioral.strategy.IStrategy
+import behavioral.strategy.SomeStrategy1
+import behavioral.strategy.SomeStrategy2
+import behavioral.strategy.StrategyProcessor
+import org.junit.BeforeClass
+import org.junit.Test
 
-internal class StrategyProcessorTest {
+class StrategyProcessorTest {
+
+    companion object {
+        var processor = StrategyProcessor(SomeStrategy1());
+        @BeforeClass
+        @JvmStatic
+        fun tearDown() {
+            processor = StrategyProcessor(SomeStrategy1())
+        }
+    }
 
     var processor = StrategyProcessor(SomeStrategy1());
-
-    @AfterEach
-    fun tearDown() {
-        processor = StrategyProcessor(SomeStrategy1())
-    }
 
     @Test
     fun getBaseStrategy() {

@@ -1,4 +1,4 @@
-package Behavioral.Strategy
+package behavioral.strategy
 
 class SomeStrategy2 : IStrategy {
 

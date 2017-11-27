@@ -1,4 +1,4 @@
-package Behavioral.TemplateMethod
+package behavioral.templateMethod
 
 abstract class Base {
 

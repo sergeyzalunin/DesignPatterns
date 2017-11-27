@@ -1,8 +1,6 @@
-package Behavioral.Strategy
+package behavioral.strategy
 
-import jdk.nashorn.internal.objects.NativeFunction.call
-
-class StrategyProcessor{
+public class StrategyProcessor{
 
     var baseStrategy: IStrategy?;
 
