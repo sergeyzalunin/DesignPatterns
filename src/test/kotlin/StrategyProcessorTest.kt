@@ -2,21 +2,18 @@ import behavioral.strategy.IStrategy
 import behavioral.strategy.SomeStrategy1
 import behavioral.strategy.SomeStrategy2
 import behavioral.strategy.StrategyProcessor
+import org.junit.Before
 import org.junit.BeforeClass
 import org.junit.Test
 
 class StrategyProcessorTest {
 
-    companion object {
-        var processor = StrategyProcessor(SomeStrategy1());
-        @BeforeClass
-        @JvmStatic
-        fun tearDown() {
-            processor = StrategyProcessor(SomeStrategy1())
-        }
-    }
-
     var processor = StrategyProcessor(SomeStrategy1());
+
+    @Before
+    fun prepareTest() {
+        processor = StrategyProcessor(SomeStrategy1())
+    }
 
     @Test
     fun getBaseStrategy() {

@@ -1,26 +1,24 @@
 import behavioral.mediator.ConcreteCollegue1
 import behavioral.mediator.ConcreteCollegue2
 import behavioral.mediator.ConcreteMediator
+import org.junit.Before
 import org.junit.BeforeClass
 import org.junit.Test
+import kotlin.test.expect
 
 class MediatorTest {
 
     var messageForCollegue1 = "message from collegue2 to collegue1"
     var messageForCollegue2 = "message from collegue1 to collegue2"
+    var mediator = ConcreteMediator();
+    var collegue1 = ConcreteCollegue1(mediator)
+    var collegue2 = ConcreteCollegue2(mediator)
 
-    companion object {
-        var mediator = ConcreteMediator();
-        var collegue1 = ConcreteCollegue1(mediator)
-        var collegue2 = ConcreteCollegue2(mediator)
-
-        @BeforeClass
-        @JvmStatic
-        fun tearDown() {
-            mediator = ConcreteMediator()
-            collegue1 = ConcreteCollegue1(mediator)
-            collegue2 = ConcreteCollegue2(mediator)
-        }
+    @Before
+    fun prepareTest() {
+        mediator = ConcreteMediator()
+        collegue1 = ConcreteCollegue1(mediator)
+        collegue2 = ConcreteCollegue2(mediator)
     }
 
     @Test
