@@ -37,7 +37,7 @@ class ObservableTest {
         superMessenger.set(notify)
 
         assert(contact1.getMessage() == notify &&
-                contact1.getMessage() == notify &&
-                contact1.getMessage() == notify)
+                contact2.getMessage() == notify &&
+                contact3.getMessage() == notify)
     }
 }
