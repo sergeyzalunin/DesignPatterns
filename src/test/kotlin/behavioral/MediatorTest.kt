@@ -1,3 +1,5 @@
+package behavioral
+
 import behavioral.mediator.ConcreteCollegue1
 import behavioral.mediator.ConcreteCollegue2
 import behavioral.mediator.ConcreteMediator

@@ -1,9 +1,10 @@
+package behavioral
+
 import behavioral.strategy.IStrategy
 import behavioral.strategy.SomeStrategy1
 import behavioral.strategy.SomeStrategy2
 import behavioral.strategy.StrategyProcessor
 import org.junit.Before
-import org.junit.BeforeClass
 import org.junit.Test
 
 class StrategyProcessorTest {
