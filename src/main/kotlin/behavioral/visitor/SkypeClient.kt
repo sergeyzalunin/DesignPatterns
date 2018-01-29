@@ -1,14 +1,14 @@
 package behavioral.visitor
 
-class SkypeClient : IMessager {
+class SkypeClient : IMessenger {
 
     lateinit var lastMessage: String
 
-    override fun reciveMessageFrom(messager: SkypeMessage) {
-        lastMessage = messager.lastMessage;
+    override fun receiveMessageFrom(messenger: SkypeMessage) {
+        lastMessage = messenger.lastMessage;
     }
 
-    override fun reciveMessageFrom(messager: TelegramMessage) {
-        lastMessage = messager.lastMessage;
+    override fun receiveMessageFrom(messenger: TelegramMessage) {
+        lastMessage = messenger.lastMessage;
     }
 }

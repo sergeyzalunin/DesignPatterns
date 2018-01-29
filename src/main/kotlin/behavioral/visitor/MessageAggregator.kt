@@ -1,5 +1,5 @@
 package behavioral.visitor
 
 abstract class MessageAggregator {
-    abstract fun sendMessageTo(messager: IMessager);
+    abstract fun sendMessageTo(messenger: IMessenger);
 }

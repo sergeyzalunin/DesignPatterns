@@ -5,7 +5,7 @@ class TelegramMessage(message: String) : MessageAggregator() {
 
     var lastMessage: String = message
 
-    override fun sendMessageTo(messager: IMessager) {
-        messager.reciveMessageFrom(this);
+    override fun sendMessageTo(messenger: IMessenger) {
+        messenger.receiveMessageFrom(this);
     }
 }
