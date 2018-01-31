@@ -2,8 +2,6 @@ package behavioral.observer
 
 import org.junit.Test
 
-import org.junit.Assert.*
-
 class ObserverTest {
 
     @Test

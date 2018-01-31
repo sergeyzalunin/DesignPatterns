@@ -1,9 +1,6 @@
 package behavioral.observer
 
-import org.junit.Before
 import org.junit.Test
-
-import org.junit.Assert.*
 
 class ObservableTest {
 

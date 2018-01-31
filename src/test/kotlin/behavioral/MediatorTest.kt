@@ -4,9 +4,7 @@ import behavioral.mediator.ConcreteCollegue1
 import behavioral.mediator.ConcreteCollegue2
 import behavioral.mediator.ConcreteMediator
 import org.junit.Before
-import org.junit.BeforeClass
 import org.junit.Test
-import kotlin.test.expect
 
 class MediatorTest {
 

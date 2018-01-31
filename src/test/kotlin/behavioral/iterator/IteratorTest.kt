@@ -3,8 +3,6 @@ package behavioral.iterator
 import org.junit.Before
 import org.junit.Test
 
-import org.junit.Assert.*
-
 class IteratorTest {
 
     lateinit var numbersList: SomeList
