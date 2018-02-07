@@ -1,9 +1,9 @@
 package behavioral.state
 
-class Message (state: IMessageState) {
+class Message (state: MessageState) {
 
     var statusText: String = ""
-    var state: IMessageState = state
+    var state: MessageState = state
 
     fun send() {
         this.state.deliveryMessage(this)

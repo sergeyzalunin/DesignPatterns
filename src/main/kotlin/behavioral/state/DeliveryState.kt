@@ -1,16 +1,19 @@
 package behavioral.state
 
-class DeliveryState : IMessageState {
+class DeliveryState : MessageState {
 
+    constructor() {
+        deliveryText = "Message was delivered. Switch to ReceiveState"
+        receiveText = "Message was received. Switch to DeliveryState"
+        deleteText = "Delete message"
+    }
     override fun deliveryMessage(message: Message) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        message.statusText = deliveryText
+        message.state = ReceiveState()
     }
 
     override fun receiveMessage(message: Message) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun deleteMessage(message: Message) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        message.statusText = receiveText
+        message.state = DeliveryState()
     }
 }
