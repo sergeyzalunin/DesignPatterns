@@ -8,6 +8,7 @@ class LockSingleton {
 
     companion object {
         private val locker: Lock = ReentrantLock()
+        @Volatile
         private var threadId: Long = 0L
 
         fun instance(): Long {
