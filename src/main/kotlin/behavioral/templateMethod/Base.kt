@@ -10,8 +10,8 @@ abstract class Base {
 
     //A template method
     fun calculate(): Int  {
-        setX();
-        setY();
-        return x + y;
+        setX()
+        setY()
+        return x + y
     }
 }
