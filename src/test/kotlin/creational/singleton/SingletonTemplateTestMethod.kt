@@ -1,4 +1,4 @@
-package creational.singleton;
+package creational.singleton
 
 import org.junit.FixMethodOrder
 import org.junit.Test

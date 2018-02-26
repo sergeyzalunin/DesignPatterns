@@ -7,6 +7,6 @@ class SomeChild1: Base() {
     }
 
     override fun setY() {
-        y = 3;
+        y = 3
     }
 }

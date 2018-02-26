@@ -1,5 +1,3 @@
 package behavioral.memento
 
-class TextMemento(var text: String) {
-
-}
+class TextMemento(var text: String)

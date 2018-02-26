@@ -10,7 +10,7 @@ class MediatorTest {
 
     var messageForCollegue1 = "message from collegue2 to collegue1"
     var messageForCollegue2 = "message from collegue1 to collegue2"
-    var mediator = ConcreteMediator();
+    var mediator = ConcreteMediator()
     var collegue1 = ConcreteCollegue1(mediator)
     var collegue2 = ConcreteCollegue2(mediator)
 

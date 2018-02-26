@@ -11,7 +11,7 @@ class ConcreteMediator: Mediator() {
         } else if (colleague == collegue2) {
             collegue1.notify(message)
         } else {
-            throw IllegalArgumentException("Colleague did not equals ConcreteCollegue1 or ConcreteCollegue2");
+            throw IllegalArgumentException("Colleague did not equals ConcreteCollegue1 or ConcreteCollegue2")
         }
     }
 

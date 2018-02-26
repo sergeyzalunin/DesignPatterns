@@ -5,10 +5,10 @@ class TelegramClient : IMessenger {
     lateinit var lastMessage: String
 
     override fun receiveMessageFrom(messenger: SkypeMessage) {
-        lastMessage = messenger.lastMessage;
+        lastMessage = messenger.lastMessage
     }
 
     override fun receiveMessageFrom(messenger: TelegramMessage) {
-        lastMessage = messenger.lastMessage;
+        lastMessage = messenger.lastMessage
     }
 }

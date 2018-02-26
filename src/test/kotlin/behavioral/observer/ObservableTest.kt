@@ -22,7 +22,7 @@ class ObservableTest {
     @Test
     fun notifyObservers() {
 
-        var notify: String = "notify from messanger";
+        var notify: String = "notify from messanger"
         var contact1 = Contact("Contact1")
         var contact2 = Contact("Contact2")
         var contact3 = Contact("Contact3")

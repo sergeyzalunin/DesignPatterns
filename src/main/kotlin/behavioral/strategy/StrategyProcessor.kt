@@ -1,19 +1,19 @@
 package behavioral.strategy
 
-public class StrategyProcessor{
+class StrategyProcessor{
 
-    var baseStrategy: IStrategy?;
+    var baseStrategy: IStrategy?
 
     constructor() {
-        this.baseStrategy = null;
+        this.baseStrategy = null
     }
 
     constructor(baseStrategy: IStrategy) {
-        this.baseStrategy = baseStrategy;
+        this.baseStrategy = baseStrategy
     }
 
     fun setStrategy(item: IStrategy) {
-        baseStrategy = item;
+        baseStrategy = item
     }
 
     fun getStrategyName() : String {
@@ -21,6 +21,6 @@ public class StrategyProcessor{
     }
 
     fun getStrategyName(call: () -> String): String {
-        return call();
+        return call()
     }
 }

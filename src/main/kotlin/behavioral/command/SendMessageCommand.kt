@@ -5,10 +5,10 @@ class SendMessageCommand(receiver: MessengerReceiver) : ICommand {
     var receiver: MessengerReceiver = receiver
 
     override fun doCommand() {
-        receiver.getMessage();
+        receiver.getMessage()
     }
 
     override fun undoCommand() {
-        receiver.deleteMessage();
+        receiver.deleteMessage()
     }
 }

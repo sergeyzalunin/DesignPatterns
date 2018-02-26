@@ -1,5 +1,5 @@
 package behavioral.strategy
 
 interface IStrategy  {
-    fun getStrategyName() : String;
+    fun getStrategyName() : String
 }

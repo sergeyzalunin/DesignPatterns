@@ -5,10 +5,10 @@ class MessengerInvoker {
     lateinit var command: ICommand
 
     fun sendMessage() {
-        command.doCommand();
+        command.doCommand()
     }
 
     fun deleteMessage() {
-        command.undoCommand();
+        command.undoCommand()
     }
 }

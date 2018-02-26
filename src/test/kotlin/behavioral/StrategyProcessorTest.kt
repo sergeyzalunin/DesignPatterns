@@ -9,7 +9,7 @@ import org.junit.Test
 
 class StrategyProcessorTest {
 
-    var processor = StrategyProcessor(SomeStrategy1());
+    var processor = StrategyProcessor(SomeStrategy1())
 
     @Before
     fun prepareTest() {
@@ -42,7 +42,7 @@ class StrategyProcessorTest {
     fun runStrategyTests() {
         assert(processor.getStrategyName() == "Strategy #1")
 
-        processor.setStrategy(SomeStrategy2());
+        processor.setStrategy(SomeStrategy2())
         assert(processor.getStrategyName() == "Strategy #2")
     }
 
@@ -51,8 +51,8 @@ class StrategyProcessorTest {
 
         var name = StrategyProcessor().getStrategyName(fun(): String {
             var subprocessor = StrategyProcessor(SomeStrategy2())
-            return subprocessor.getStrategyName();
-        });
+            return subprocessor.getStrategyName()
+        })
         assert(name == "Strategy #2")
     }
 }
